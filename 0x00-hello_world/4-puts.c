@@ -1,11 +1,11 @@
-#include < stdio.h >
+#include<stdio.h>
 
 /**
-  *Main-starting point
+  *main - starting point
   *
   *Description: The puts function outputs the sentence
   *
-  *Return 0
+  *Return: 0
   */
 int main(void)
 {
