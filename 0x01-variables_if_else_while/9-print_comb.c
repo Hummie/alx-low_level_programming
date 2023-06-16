@@ -2,13 +2,14 @@
 /**
   *main - staring function
   *
-  *Description: printing single digit numbers and adding a comma and space in between.
+  *Description: printing single digit numbers and adding a comma and space.
   *
   *Return: 0
   */
 int main(void)
 {
 	int i;
+
 	for (i = 0; i <= 9; i++)
 	{
 		putchar (i + '0');
