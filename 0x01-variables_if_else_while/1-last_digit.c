@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /**
-  *Main - starting function
+  *main - starting function
   *
   *Description: Finding the last digit of n using modulo 10
   *
