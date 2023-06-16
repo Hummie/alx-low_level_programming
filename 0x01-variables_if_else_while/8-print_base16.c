@@ -11,7 +11,7 @@ int main(void)
 	int f;
 	char let;
 
-	for (f = '0'; f <= 9; f++)
+	for (f = '0'; f <= '9'; f++)
 	putchar(f);
 
 	for (let = 'a'; let <= 'f'; let++)
