@@ -1,0 +1,3 @@
+printing putchar 
+printing alphabet
+
