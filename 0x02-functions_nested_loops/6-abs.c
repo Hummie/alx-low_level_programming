@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  *int_abs - absolute value of a number
+  *_abs - absolute value of a number
   *@num: Bumber tobe computed
   *Return: Absolute value or 0
   */
@@ -11,8 +11,8 @@ int _abs(int num)
 	{
 	int abs_val;
 
-	abs_val = num* -1;
-	return(abs_val);
+	abs_val = num * -1;
+	return (abs_val);
 	}
-	return(num);
+	return (num);
 }
