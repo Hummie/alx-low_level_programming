@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+  *main - starting function
+  *Description: printing multiples of 3 and 5
+  *Return: 0
+  */
 int main(void)
 {
 	int i;
