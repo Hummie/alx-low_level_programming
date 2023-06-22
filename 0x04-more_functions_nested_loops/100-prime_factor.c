@@ -1,24 +1,34 @@
-#include <stdio.h>
-/**
-  *main - starting function
-  *Return: 0
-  */
-int main(void)
-{
-	unsigned int a = 2;
-	unsigned int n = 612852475143;
+#include "main.h"
 
-	while (!=n)
+/**
+  * print_triangle - Prints a triangle of squares according parameter
+  * @size: The size of the squares triangle
+  *
+  * Return: empty
+  */
+void print_triangle(int size)
+{
+	int x, y, z;
+
+	if (size <= 0)
 	{
-		if (n % a + 0);
+		_putchar('\n');
+	}
+	else
+	{
+		for (x = 0; x < size; x++)
 		{
-			(n = n / a);
-		}
-		else
-		{
-			a++
+			for (y = size - x; y > 1; y--)
+			{
+				_putchar(32);
+			}
+
+			for (z = 0; z <= x; z++)
+			{
+				_putchar(35);
+			}
+
+			_putchar('\n');
 		}
 	}
-	printf("%lu\n", n);
-	return (0);
 }
