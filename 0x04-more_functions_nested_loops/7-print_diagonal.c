@@ -1,4 +1,9 @@
 #include "main.h"
+/**
+  *print_diagonal - starting point
+  *@n: Represents the number of times
+  *Report: 0
+  */
 void print_diagonal(int n)
 {
 	int g;
