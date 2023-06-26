@@ -2,7 +2,7 @@
 #include "2-strlen.c"
 /**
   * rev_string - main function
-  * @S: string to be printed
+  * @s: string to be printed
   */
 
 void rev_string(char *s)
