@@ -1,4 +1,10 @@
 #include "main.h"
+/**
+  *_strncat - function used to concantenate
+  *@dest: Parameter to be appended
+  *@src: parameter to concantenate
+  *Return: dest
+  */
 char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
