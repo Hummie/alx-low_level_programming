@@ -3,6 +3,7 @@
   *_strncat - function used to concantenate
   *@dest: Parameter to be appended
   *@src: parameter to concantenate
+  *@n: number of bytes from src
   *Return: dest
   */
 char *_strncat(char *dest, char *src, int n)
