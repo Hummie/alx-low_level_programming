@@ -24,7 +24,7 @@ int palistrcomp(char *a, int l)
 		return (0);
 	if (*a == 0)
 		return (1);
-	return palistrcomp(a + 1, l - 2);
+	return (palistrcomp(a + 1, l - 2));
 }
 
 /**
@@ -36,7 +36,7 @@ int is_palindrome(char *s)
 {
 	int l;
 
-	l = palistrlen(s,0);
+	l = palistrlen(s, 0);
 	return (palistrcomp(s, l));
 }
 
