@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
   *main - starting function
-  *argc: counter
-  *argv: string
+  *@argc: counter
+  *@argv: string
   *Return: 0
   */
 int main(int argc, char *argv[])
