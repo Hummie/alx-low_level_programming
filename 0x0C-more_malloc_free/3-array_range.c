@@ -16,13 +16,13 @@ int *array_range(int min, int max)
 
 	len = max - min + 1;
 
-	arr_ran = (int *)malloc(len * sizeof(int));
+	arr_ran = malloc(len * sizeof(int));
 
 	if (arr_ran == NULL)
 		return (NULL);
 
 	for (i = min; i < len; i++)
-		arr_ran[i] = min + i;
+		arr_ran[i] = min++;
 
 	return (arr_ran);
 }
