@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stddef.h>
+#include <stdio.h>
 /**
   *print_numbers - function to print numbers
   *@separator: string
@@ -12,9 +13,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list print_num;
 
 	va_start(print_num, n);
-
-	if (separator == NULL)
-		va_end(print_num);
 
 	for (i = 0; i < n; i++)
 	{
