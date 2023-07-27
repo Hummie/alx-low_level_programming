@@ -6,7 +6,7 @@
   *add_node - function to add node
   *@head: pointer to struct list_t
   *@str: string to be duplicated
-
+  *
   *Return: newnode
   */
 list_t *add_node(list_t **head, const char *str)
