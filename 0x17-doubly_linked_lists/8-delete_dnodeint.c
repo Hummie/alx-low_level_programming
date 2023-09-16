@@ -20,6 +20,13 @@ unsigned int listint_len(const dlistint_t *h)
 
 	return (count);
 }
+/**
+  * delete_dnodeint_at_index - deletes the node at a specified index
+  * @head: pointer to the first node
+  * @index: index of node to be deleted
+  *
+  * Return: 1 if it succeeded, -1 if it failed
+  **/
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *temp;
@@ -60,5 +67,3 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	}
 	return (1);
 }
-			
-	
