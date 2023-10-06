@@ -15,13 +15,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (!key || !ht || strlen(key) == 0)
 		return (0);
-	index = key_index((const unsigned char *)key, ht->size); 
-	if (ht->array[index])
+	index = key_index((const unsigned char *)key, ht->size); /*finding the index*/
+	if (ht->array[index]) /* checking if the key exists */
 	{
 		current = ht->array[index];
 		while (current)
 		{
-			if (strcmp(current->key, key) == 0) 
+			if (strcmp(current->key, key) == 0) /* update value if key exists */
 			{
 				free(current->value);
 				current->value = strdup(value);
@@ -30,7 +30,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			current = current->next;
 		}
 	}
-	new_node = malloc(sizeof(hash_node_t)); 
+	new_node = malloc(sizeof(hash_node_t)); /* new node for the key-value pair */
 	if (!new_node)
 		return (0);
 	new_node->key = strdup(key);
@@ -46,7 +46,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		free(new_node);
 		return (0);
 	}
-	new_node->next = ht->array[index]; 
+	new_node->next = ht->array[index]; /* inserting new node at the beginning */
 	ht->array[index] = new_node;
 	return (1);
 }
